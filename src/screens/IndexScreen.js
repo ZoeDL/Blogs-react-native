@@ -3,7 +3,7 @@ import { View, FlatList, Text, StyleSheet } from 'react-native';
 import BlogContext from '../context/BlogContext';
 
 const IndexScreen = () => {
-    const blogPosts = useContext(BlogContext)
+    const { blogPosts } = useContext(BlogContext)
     return (
         <View>
             <FlatList
